@@ -3,7 +3,7 @@ import Image from "next/image";
 const ProjectCard = ({ src, title, desc, skills }) => {
   return (
     <div>
-      <div className="flex flex-col items-center text-center w-60 h-105 pt-6 pl-3 pr-3 bg-stone-100 gap-2 rounded-xl shadow-2xl/30">
+      <div className="flex flex-col items-center text-center w-65 h-105 pt-6 pl-4 pr-4 bg-stone-100 gap-2 rounded-xl shadow-2xl/40">
         <Image
           src={src}
           alt=""
