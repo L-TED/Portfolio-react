@@ -7,7 +7,7 @@ const SectProject = () => {
     <section id="project" className="w-full h-screen bg-stone-200">
       <div className="flex flex-col items-center p-10 gap-5">
         <Text
-          style={"text-6xl font-bold mt-10 mb-10"}
+          style={"text-4xl font-bold mt-10 mb-10"}
           text={"Featured Projects"}
         />
         <div className="grid grid-cols-3 gap-14">
@@ -18,7 +18,7 @@ const SectProject = () => {
                 src={v.src}
                 title={v.title}
                 desc={v.desc}
-                skills={v.skills.map((v) => {})}
+                skills={v.skills}
               />
             );
           })}

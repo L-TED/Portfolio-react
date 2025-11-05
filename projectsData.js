@@ -1,4 +1,5 @@
 export const data = [
+  // projects data
   {
     id: "0",
     src: "/coding.jpg",
@@ -39,6 +40,38 @@ export const data = [
     src: "/coding.jpg",
     title: "Data Visualization Dashboard",
     desc: "Created an interactive dashboard for visualizing complex datasets, offering various chart types and filtering options for in-depth data analysis and reporting.",
-    skills: ["React", "Next.js"],
+    skills: ["React", "Node.js", "Next.js", "Javascript", "TypeScript"],
+  },
+];
+
+export const progress = [
+  // learning data
+  {
+    id: "0",
+    src: "/program.jpg",
+    title: "Advanced React Patterns",
+    desc: "Deep dive into advanced React concepts such as render props, custom hooks, context API optimization, and performance tuning for large-scale applications.",
+    skills: ["React", "TypeScript"],
+  },
+  {
+    id: "1",
+    src: "/program.jpg",
+    title: "Cloud Native Development with Kubernetes",
+    desc: "Learning container orchestration with Kubernetes, focusing on deployment strategies, service mesh, and managing microservices in a cloud environment.",
+    skills: ["Docker", "AWS"],
+  },
+  {
+    id: "2",
+    src: "/program.jpg",
+    title: "Machine Learning Fundamentals",
+    desc: "Exploring the core principles of machine learning, including supervised and unsupervised learning, model evaluation, and practical applications using Python libraries.",
+    skills: ["Python"],
+  },
+  {
+    id: "3",
+    src: "/program.jpg",
+    title: "Backend Security Best Practices",
+    desc: "Understanding common security vulnerabilities in backend systems and implementing robust protection measures, including authentication, authorization, and data encryption.",
+    skills: ["Node.js"],
   },
 ];

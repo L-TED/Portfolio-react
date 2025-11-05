@@ -22,12 +22,12 @@ const Ul = () => {
           Projects
         </motion.li>
       </Link>
-      <Link href="#experience">
+      <Link href="#growth">
         <motion.li
           whileHover={hovering}
           className="p-2 h-full flex items-center"
         >
-          Experience
+          Growth
         </motion.li>
       </Link>
       <Link href="#contact">

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const ProjectCard = ({ src, title, desc, skills }) => {
+const StudyCard = ({ src, title, desc, skills }) => {
   return (
     <div>
       <div className="flex flex-col justify-between text-center w-65 h-105 pt-6 pl-4 pr-4 pb-4 bg-stone-100 gap-2 rounded-xl shadow-2xl/40">
@@ -30,4 +30,4 @@ const ProjectCard = ({ src, title, desc, skills }) => {
   );
 };
 
-export default ProjectCard;
+export default StudyCard;
