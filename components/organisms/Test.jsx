@@ -68,7 +68,6 @@ const Test = () => {
           The Box2
         </div>
       </div>
-      <div className="h-[40vh] bg-emerald-500"></div>
     </section>
   );
 };

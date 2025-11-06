@@ -1,11 +1,12 @@
+"use client";
 import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import LottieAnimation from "../components/LottieAnimation";
+import LottieAnim from "./LottieAnim";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const ScrollTrigger = () => {
+const ScrollLottie = () => {
   // Lottie 인스턴스를 저장할 Ref
   const lottieAnimRef = useRef(null);
   // ScrollTrigger의 기준이 될 요소의 Ref
@@ -27,6 +28,7 @@ const ScrollTrigger = () => {
         end: "+=3000", // 스크롤 3000px 동안 애니메이션 진행
         scrub: true, // 스크롤에 맞춰 부드럽게 애니메이션 진행 (스크롤바 속도에 따라)
         pin: true, // 애니메이션 진행 동안 트리거 요소를 고정
+        markers: true,
         onUpdate: (self) => {
           // 스크롤 진행률 (0부터 1까지)에 따라 Lottie 프레임 업데이트
           const progress = self.progress;
@@ -42,9 +44,16 @@ const ScrollTrigger = () => {
   return (
     <div>
       {/* ScrollTrigger의 기준이 될 컨테이너. 충분한 스크롤 영역을 위해 높이를 지정 */}
-      <div ref={triggerRef} style={{ height: "300vh", position: "relative" }}>
-        <div style={{ position: "sticky", top: 0, height: "100vh" }}>
-          <LottieAnimation ref={lottieAnimRef} />
+      <div
+        ref={triggerRef}
+        style={{
+          height: "300vh",
+          position: "relative",
+          backgroundColor: "#f8f1f5",
+        }}
+      >
+        <div style={{ position: "fixed", top: 0, height: "100vh" }}>
+          <LottieAnim ref={lottieAnimRef} />
         </div>
       </div>
       {/* 애니메이션 이후의 컨텐츠 */}
@@ -55,4 +64,4 @@ const ScrollTrigger = () => {
   );
 };
 
-export default ScrollTrigger;
+export default ScrollLottie;

@@ -7,10 +7,10 @@ const SectIntro = () => {
       id="about"
       className="flex justify-between items-center w-full h-screen p-10 bg-stone-100"
     >
-      <div className="flex justify-start ">
+      <div className="flex ">
         <IntroProfile />
       </div>
-      <div className="flex justify-end ">
+      <div className="flex ">
         <IntroTitle />
       </div>
     </section>

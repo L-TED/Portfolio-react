@@ -16,7 +16,7 @@ const Template = () => {
       <SectProject />
       <SectEmpty style={"w-full h-[70vh] bg-stone-200"} />
       <SectExp />
-      <SectEmpty style={"w-full h-[70vh] bg-stone-300"} />
+      <SectEmpty style={"w-full h-[70vh] bg-stone-100"} />
       <SectContact />
       <Footer />
       <Test />

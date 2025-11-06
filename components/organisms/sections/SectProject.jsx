@@ -19,6 +19,7 @@ const SectProject = () => {
                 title={v.title}
                 desc={v.desc}
                 skills={v.skills}
+                detail={v.detail}
               />
             );
           })}
